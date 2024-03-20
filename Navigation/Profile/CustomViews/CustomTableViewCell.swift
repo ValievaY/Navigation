@@ -10,7 +10,7 @@ import StorageService
 
 class CustomTableViewCell: UITableViewCell {
     
-    private lazy var authorText: UITextView = {
+     lazy var authorText: UITextView = {
         let authorText = UITextView()
         authorText.textColor = .black
         authorText.font = UIFont.systemFont(ofSize: 20, weight: .bold)
@@ -20,7 +20,7 @@ class CustomTableViewCell: UITableViewCell {
         return authorText
     }()
     
-    private lazy var descriptionText: UITextView = {
+     lazy var descriptionText: UITextView = {
         let descriptionText = UITextView()
         descriptionText.textColor = .systemGray
         descriptionText.font = UIFont.systemFont(ofSize: 14, weight: .regular)
@@ -29,7 +29,7 @@ class CustomTableViewCell: UITableViewCell {
         return descriptionText
     }()
     
-    private lazy var postImage: UIImageView = {
+     lazy var postImage: UIImageView = {
         let postImage = UIImageView()
         postImage.contentMode = .scaleAspectFit
         postImage.backgroundColor = .black
