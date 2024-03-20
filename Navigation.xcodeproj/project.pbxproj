@@ -36,6 +36,10 @@
 		55708F512BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		557A222429C0798E0027FFCA /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222329C0798E0027FFCA /* BruteForce.swift */; };
 		557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222729C2D5F90027FFCA /* InfoPostModel.swift */; };
+		55859B472BAA4C4B00040F10 /* FavorietsPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */; };
+		55859B4A2BAA4CA400040F10 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */; };
+		55859B4C2BAA4E3500040F10 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B4B2BAA4E3500040F10 /* CoreDataService.swift */; };
+		55859B4E2BAA4E8900040F10 /* FavorietsPostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */; };
 		55DDB2DA2B29BDA80038BF46 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2D92B29BDA80038BF46 /* PlanetModel.swift */; };
 		55DDB2DC2B29C1450038BF46 /* PlanetNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2DB2B29C1450038BF46 /* PlanetNetwork.swift */; };
 		55DDB2E02B360F290038BF46 /* CheckerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2DF2B360F290038BF46 /* CheckerServiceProtocol.swift */; };
@@ -110,6 +114,10 @@
 		55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		557A222329C0798E0027FFCA /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		557A222729C2D5F90027FFCA /* InfoPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostModel.swift; sourceTree = "<group>"; };
+		55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostsViewController.swift; sourceTree = "<group>"; };
+		55859B492BAA4CA400040F10 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		55859B4B2BAA4E3500040F10 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostsService.swift; sourceTree = "<group>"; };
 		55DDB2D92B29BDA80038BF46 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 		55DDB2DB2B29C1450038BF46 /* PlanetNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNetwork.swift; sourceTree = "<group>"; };
 		55DDB2DF2B360F290038BF46 /* CheckerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerServiceProtocol.swift; sourceTree = "<group>"; };
@@ -215,6 +223,7 @@
 				55FE6A9128B56A9A00991F30 /* FeedViewController.swift */,
 				55FE6A9528B5734D00991F30 /* PostViewController.swift */,
 				55FE6A9B28B7BD0400991F30 /* InfoViewController.swift */,
+				55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 				553A87652AFEA4600055C494 /* NetworkService.swift */,
 				555D35FA2B28C1A800D2901F /* UserNetwork.swift */,
 				55DDB2DB2B29C1450038BF46 /* PlanetNetwork.swift */,
+				55859B4B2BAA4E3500040F10 /* CoreDataService.swift */,
+				55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 				55FE6A8428B38B7C00991F30 /* Assets.xcassets */,
 				55FE6A8928B38B7C00991F30 /* Info.plist */,
 				55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */,
+				55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -511,6 +523,7 @@
 				55FE6A7C28B38B7700991F30 /* AppDelegate.swift in Sources */,
 				555D35FB2B28C1A800D2901F /* UserNetwork.swift in Sources */,
 				551FDB812958736300581B08 /* User.swift in Sources */,
+				55859B4A2BAA4CA400040F10 /* CoreDataModel.xcdatamodeld in Sources */,
 				55EC75F029C86D7900F26EC3 /* LoginError.swift in Sources */,
 				55FE6A9C28B7BD0400991F30 /* InfoViewController.swift in Sources */,
 				551FDB83295874AA00581B08 /* UserService.swift in Sources */,
@@ -519,6 +532,7 @@
 				551E02CD28E78272009C45C4 /* CustomTableViewCell.swift in Sources */,
 				55FE6A9428B56B7900991F30 /* ProfileViewController.swift in Sources */,
 				55FE6A9828B574F300991F30 /* TabBarController.swift in Sources */,
+				55859B472BAA4C4B00040F10 /* FavorietsPostsViewController.swift in Sources */,
 				551FDB85295876F000581B08 /* CurrentUserService.swift in Sources */,
 				551FDB8B296C2C7900581B08 /* LoginViewControllerDelegate.swift in Sources */,
 				551FDB87295CF97D00581B08 /* TestUserService.swift in Sources */,
@@ -530,9 +544,11 @@
 				554D61A128BB53BF0006D0BE /* ProfileHeaderView.swift in Sources */,
 				551FDB8D296C2E2B00581B08 /* LoginInspector.swift in Sources */,
 				55DDB2E02B360F290038BF46 /* CheckerServiceProtocol.swift in Sources */,
+				55859B4E2BAA4E8900040F10 /* FavorietsPostsService.swift in Sources */,
 				557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */,
 				557A222429C0798E0027FFCA /* BruteForce.swift in Sources */,
 				55FE6A9228B56A9A00991F30 /* FeedViewController.swift in Sources */,
+				55859B4C2BAA4E3500040F10 /* CoreDataService.swift in Sources */,
 				55EEA26D297859F40024E2AE /* FeedModel.swift in Sources */,
 				551E02D528FA0646009C45C4 /* PhotosNames.swift in Sources */,
 				551E02D128EF235F009C45C4 /* ProfileCollectionView.swift in Sources */,
@@ -848,6 +864,19 @@
 			productName = iOSIntPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55859B492BAA4CA400040F10 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 55859B492BAA4CA400040F10 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 55FE6A7028B38B7600991F30 /* Project object */;
 }

@@ -55,6 +55,8 @@ class ProfileViewController: UIViewController {
     let photosController = PhotosViewController()
     let postModel = PostModel()
     
+    private let favorietsPosts = FavorietsPostsService()
+    
     private var avatarViewWidthConstraint: NSLayoutConstraint?
     private var avatarViewHeightConstraint: NSLayoutConstraint?
     private var avatarViewLeadingAnchor: NSLayoutConstraint?
@@ -175,6 +177,12 @@ class ProfileViewController: UIViewController {
             self.avatarView.isHidden = true
         }
     }
+    
+    @objc func didTapCell (_ sender: UITapGestureRecognizer) {
+        let post = self.postModel.postView
+        let index = sender.view?.tag
+        favorietsPosts.createItem(with: post[index ?? 0])
+    }
 }
     
 extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
@@ -209,6 +217,10 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
 
             let post = self.postModel.postView[indexPath.row]
             cell.setup(with: post)
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapCell(_:)))
+            tapGestureRecognizer.numberOfTapsRequired = 2
+            cell.tag = indexPath.row
+            cell.addGestureRecognizer(tapGestureRecognizer)
             return cell
         }
        return tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
