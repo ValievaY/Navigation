@@ -80,11 +80,15 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     func setup(with viewPost: Post) {
+        let formatLikes = NSLocalizedString("localized_likes", comment: "")
+        let stringLikes = String(format: formatLikes, viewPost.likes)
+        let formatViews = NSLocalizedString("localized_views", comment: "")
+        let stringViews = String(format: formatViews, viewPost.views)
         authorText.text = viewPost.author
         descriptionText.text = viewPost.descriptionText
         postImage.image = UIImage(named: "\(viewPost.image)")
-        likesLabel.text = "Likes: \(viewPost.likes)"
-        viewLabel.text = "Views: \(viewPost.views)"
+        likesLabel.text = stringLikes
+        viewLabel.text = stringViews
     }
     
     private func setupView() {

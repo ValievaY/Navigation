@@ -15,7 +15,7 @@ class FeedViewController: UIViewController {
     
     private lazy var buttonFirst: UIButton = {
         let button = UIButton()
-        button.setTitle("View post", for: .normal)
+        button.setTitle(~"view-post", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.backgroundColor = .blue
         button.layer.cornerRadius = 14
@@ -25,7 +25,7 @@ class FeedViewController: UIViewController {
     
     private lazy var buttonSecond: UIButton = {
         let button = UIButton()
-        button.setTitle("View post", for: .normal)
+        button.setTitle(~"view-post", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.backgroundColor = .blue
         button.layer.cornerRadius = 14
@@ -56,7 +56,7 @@ class FeedViewController: UIViewController {
         return label
     }()
     
-    private lazy var checkGuessButton = CustomButton(title: "Guess word",
+    private lazy var checkGuessButton = CustomButton(title: ~"guess-button",
                                                      cornerRadius: 10,
                                                      titleColor: .white,
                                                      color: .systemBlue,
@@ -76,7 +76,7 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Feed"
+        title = ~"title-feed"
         view.backgroundColor = .white
         addTargets()
         setupConstraints()
@@ -122,6 +122,6 @@ class FeedViewController: UIViewController {
     @objc func toPostView() {
         let postController = PostViewController()
         self.navigationController?.pushViewController(postController, animated: true)
-        postController.titlePost = "New Post"
+        postController.titlePost = ~"new-post"
     }
 }

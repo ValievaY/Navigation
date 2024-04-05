@@ -1,0 +1,37 @@
+//TabBar
+"feed" = "Feed";
+"profile" = "Profile";
+"like" = "Like";
+// LogInVC
+"logIn-placeholder" = "Email or password";
+"password-placeholder" = "Password";
+"logIn-button" = "Log In";
+"logInto-button" = "Log into";
+// LoginError
+"invalidAuthorisation" = "The username or password you entered is incorrect";
+"notFound" = "User is not found";
+"unexpected" = "Unexpected error";
+// FeedVC
+"view-post" = "View post";
+"guess-button" = "Guess word";
+"title-feed" = "Feed";
+"new-post" = "New Post";
+//InfoCV
+"alert-title" = "Hello!";
+"alert-message" = "Have a nice day ;)";
+"planet-text" = "Orbital period of the planet Tatooine:";
+"button-title" = "Press the button";
+//InfoPostModel
+"descriptionText1" = "HBO has released an exciting teaser for episode 7 of House of the Dragon";
+"descriptionText2" = "HBO has unveiled the debut teaser for the series adaptation of The Last of Us, which is scheduled to premiere in early 2023.";
+"descriptionText3" = "Netflix has released a short video that gives you a sneak peek at some scenes from the upcoming second season of Vikings: Valhalla.";
+"descriptionText4" = "Netflix has released the second trailer for the miniseries Monster: The Jeffrey Dahmer Story. The role of Dahmer was played by Evan Peters, known for his role as Quicksilver in the X-Men films.";
+//ProfileHeader
+"placeholder" = "write something";
+"title" = "Profile";
+"status-button" = "Show status";
+"status-text" = "Waiting for something...";
+//PhotosTVCell
+"label-text" = "Photo";
+
+

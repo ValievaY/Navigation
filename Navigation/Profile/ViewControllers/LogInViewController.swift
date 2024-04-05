@@ -42,7 +42,7 @@ class LogInViewController: UIViewController {
         logIn.textColor = .black
         logIn.backgroundColor = .systemGray6
         logIn.textAlignment = .left
-        logIn.placeholder = "  Email or phone"
+        logIn.placeholder = ~"logIn-placeholder"
         logIn.tintColor =  UIColor (named: "MyBlueColor")
         logIn.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         logIn.autocapitalizationType = .none
@@ -58,7 +58,7 @@ class LogInViewController: UIViewController {
         password.textColor = .black
         password.backgroundColor = .systemGray6
         password.textAlignment = .left
-        password.placeholder = "  Password"
+        password.placeholder = ~"password-placeholder"
         password.tintColor = UIColor (named: "MyBlueColor")
         password.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         password.autocapitalizationType = .none
@@ -71,7 +71,7 @@ class LogInViewController: UIViewController {
     
     private lazy var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
     
-    private lazy var button = CustomButton(title: "Войти",
+    private lazy var button = CustomButton(title: ~"logIn-button",
                                            cornerRadius: 10,
                                            titleColor: .white,
                                            color: UIColor(patternImage: UIImage (named: "blue_pixel")!),
@@ -80,7 +80,7 @@ class LogInViewController: UIViewController {
         authLogin()
     })
     
-    private lazy var signInButton = CustomButton(title: "Зарегестрироваться", cornerRadius: 10, titleColor: .systemGray, color: .systemGray5, buttonAction: { [self] in
+    private lazy var signInButton = CustomButton(title: ~"logInto-button", cornerRadius: 10, titleColor: .systemGray, color: .systemGray5, buttonAction: { [self] in
         
         authSignUp()
     })
@@ -187,7 +187,7 @@ class LogInViewController: UIViewController {
     }
     
     private func authSignUp() {
-        loginDelegate?.signUp(email: logIn.text!, password: password.text!) { [weak self] result in
+        loginDelegate?.signUp(logIn.text!, password.text!) { [weak self] result in
             switch result {
             case .success(_):
                 self?.navigationController?.pushViewController(self!.profileViewController, animated: true)

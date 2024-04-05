@@ -32,6 +32,11 @@
 		554D61A128BB53BF0006D0BE /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554D61A028BB53BF0006D0BE /* ProfileHeaderView.swift */; };
 		555BC6CF28D9A4040037CA63 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BC6CE28D9A4040037CA63 /* LogInViewController.swift */; };
 		555D35FB2B28C1A800D2901F /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D35FA2B28C1A800D2901F /* UserNetwork.swift */; };
+		5565FB0B2BBB28A3003E00FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB0D2BBB28A3003E00FB /* Localizable.strings */; };
+		5565FB102BBB3904003E00FB /* LocalizationFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565FB0F2BBB3904003E00FB /* LocalizationFunc.swift */; };
+		5565FB122BBB3B1E003E00FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB0D2BBB28A3003E00FB /* Localizable.strings */; };
+		5565FB162BBC7DAC003E00FB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */; };
+		5565FB172BBC7DAC003E00FB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */; };
 		55708F502BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		55708F512BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		557A222429C0798E0027FFCA /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222329C0798E0027FFCA /* BruteForce.swift */; };
@@ -111,6 +116,11 @@
 		554D61A028BB53BF0006D0BE /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		555BC6CE28D9A4040037CA63 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		555D35FA2B28C1A800D2901F /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
+		5565FB0C2BBB28A3003E00FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5565FB0E2BBB28A5003E00FB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5565FB0F2BBB3904003E00FB /* LocalizationFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationFunc.swift; sourceTree = "<group>"; };
+		5565FB182BBC7DAC003E00FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		5565FB1A2BBC7DAE003E00FB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		557A222329C0798E0027FFCA /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		557A222729C2D5F90027FFCA /* InfoPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostModel.swift; sourceTree = "<group>"; };
@@ -289,6 +299,8 @@
 		55FE6A6F28B38B7600991F30 = {
 			isa = PBXGroup;
 			children = (
+				5565FB0F2BBB3904003E00FB /* LocalizationFunc.swift */,
+				5565FB0D2BBB28A3003E00FB /* Localizable.strings */,
 				55FE6A7A28B38B7700991F30 /* Navigation */,
 				551FDB45294E6A8700581B08 /* StorageService */,
 				554B09C72BA3AF1F00D01636 /* Firebase */,
@@ -316,6 +328,7 @@
 				55FE6A8928B38B7C00991F30 /* Info.plist */,
 				55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */,
 				55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */,
+				5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -402,6 +415,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 55FE6A6F28B38B7600991F30;
 			packageReferences = (
@@ -423,6 +437,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55708F512BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */,
+				5565FB122BBB3B1E003E00FB /* Localizable.strings in Resources */,
+				5565FB172BBC7DAC003E00FB /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FE6A8528B38B7C00991F30 /* Assets.xcassets in Resources */,
+				5565FB162BBC7DAC003E00FB /* Localizable.stringsdict in Resources */,
+				5565FB0B2BBB28A3003E00FB /* Localizable.strings in Resources */,
 				55708F502BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +571,7 @@
 				551E02D528FA0646009C45C4 /* PhotosNames.swift in Sources */,
 				551E02D128EF235F009C45C4 /* ProfileCollectionView.swift in Sources */,
 				551FDB91296DC11F00581B08 /* MyLoginFactory.swift in Sources */,
+				5565FB102BBB3904003E00FB /* LocalizationFunc.swift in Sources */,
 				55FE6A7E28B38B7700991F30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +585,27 @@
 			targetProxy = 551FDB4A294E6A8700581B08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5565FB0D2BBB28A3003E00FB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5565FB0C2BBB28A3003E00FB /* en */,
+				5565FB0E2BBB28A5003E00FB /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5565FB182BBC7DAC003E00FB /* en */,
+				5565FB1A2BBC7DAE003E00FB /* ru */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		551FDB4F294E6A8700581B08 /* Debug */ = {

@@ -1,0 +1,38 @@
+//TabBar
+"feed" = "Новости";
+"profile" = "Профиль";
+"like" = "Нравится";
+// LogInVC
+"logIn-placeholder" = "Почта или телефон";
+"password-placeholder" = "Пароль";
+"logIn-button" = "Войти";
+"logInto-button" = "Зарегестрироватся";
+// LoginError
+"invalidAuthorisation" = "Неверное имя пользователя или пароль";
+"notFound" = "Пользователь не найден";
+"unexpected" = "Непредвиденная ошибка";
+// FeedVC
+"view-post" = "Посмотреть";
+"guess-button" = "Угадать слово";
+"title-feed" = "Новости";
+"new-post" = "Новый пост";
+//InfoCV
+"alert-title" = "Привет!";
+"alert-message" = "Хорошего дня)";
+"planet-text" = "Период оборота планеты Татуин:";
+"button-title" = "Нажми на кнопку";
+//InfoPostModel
+"descriptionText1" = "HBO показал нагнетающий атмосферу тизер 7 эпизода «Дома дракона»";
+"descriptionText2" = "Канал HBO представил дебютный тизер сериала-адаптации The Last of Us, премьера которого намечена на начало 2023 года.";
+"descriptionText3" = "Netflix опубликовал короткий ролик, в котором можно взглянуть на некоторые сцены из грядущего второго сезона шоу «Викинги: Вальхалла» (Vikings: Valhalla).";
+"descriptionText4" = "Netflix опубликовал второй трейлер мини-сериала «Монстр: История Джеффри Дамера» (Monster: The Jeffrey Dahmer Story). Роль Дамера исполнил Эван Питерс, известный по роли Ртути в фильмах о «Людях Икс».";
+//ProfileHeader
+"placeholder" = "напиши что-то";
+"title" = "Профиль";
+"status-button" = "Показать статус";
+"status-text" = "В ожидании...";
+//PhotosTVCell
+"label-text" = "Фото";
+
+
+
