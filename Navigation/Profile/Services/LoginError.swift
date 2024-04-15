@@ -17,11 +17,11 @@ extension LoginError {
     public var errorDescription: String {
         switch self {
         case .invalidAuthorisation:
-            return "Неверное имя пользователя или пароль"
+            return ~"invalidAuthorisation"
         case .notFound:
-            return "Пользователь не найден"
+            return ~"notFound"
         case .unexpected(_):
-            return "Непредвиденная ошибка"
+            return ~"unexpected"
         }
     }
 }

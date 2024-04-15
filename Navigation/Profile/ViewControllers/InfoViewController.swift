@@ -3,11 +3,11 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
-    let alert = UIAlertController(title: "Hello!", message: "Have a nice day ;)", preferredStyle: .alert)
+    let alert = UIAlertController(title: ~"alert-title", message: ~"alert-message", preferredStyle: .alert)
     
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Press the button", for: .normal)
+        button.setTitle(~"button-title", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.backgroundColor = .yellow
         button.layer.cornerRadius = 14
@@ -53,7 +53,7 @@ class InfoViewController: UIViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let planet):
-                    self?.labelPlanet.text = "Период оборота планеты Татуин: " + planet.orbitalPeriod
+                    self?.labelPlanet.text = ~"planet-text" + planet.orbitalPeriod
                 case .failure(let error):
                     print(error.localizedDescription)
                 }

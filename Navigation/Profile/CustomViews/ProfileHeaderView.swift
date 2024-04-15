@@ -36,7 +36,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView  {
         let status = UILabel()
         status.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         status.textColor = .gray
-        status.text = "Waiting for something..."
+        status.text = ~"status-text"
         status.translatesAutoresizingMaskIntoConstraints = false
         return status
     }()
@@ -50,21 +50,21 @@ class ProfileHeaderView: UITableViewHeaderFooterView  {
         text.layer.cornerRadius = 12
         text.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         text.textColor = .black
-        text.placeholder = "write something"
+        text.placeholder = ~"placeholder"
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
     
     private lazy var changeTitle: UIButton = {
         let titleButton = UIButton()
-        titleButton.setTitle("Profile", for: .normal)
+        titleButton.setTitle(~"title", for: .normal)
         titleButton.setTitleColor(UIColor.black, for: .normal)
         titleButton.backgroundColor = .lightGray
         titleButton.translatesAutoresizingMaskIntoConstraints = false
         return titleButton
     }()
     
-    private lazy var setStatusButton = CustomButton(title: "Show status",
+    private lazy var setStatusButton = CustomButton(title: ~"status-button",
                                                     cornerRadius: 4,
                                                     titleColor: .white,
                                                     color: .systemBlue,

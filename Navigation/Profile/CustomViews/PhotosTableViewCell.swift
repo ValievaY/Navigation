@@ -46,7 +46,7 @@ class PhotosTableViewCell: UITableViewCell {
         label.tag = 0
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.textColor = .black
-        label.text = "Photos"
+        label.text = ~"label-text"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

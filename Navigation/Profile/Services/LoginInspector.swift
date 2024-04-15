@@ -23,7 +23,7 @@ struct LoginInspector: LoginViewControllerDelegate {
     }
 
     
-    func signUp (email: String, password: String, completion: @escaping (Result<FireBaseUser, Error>) -> Void) {
+    func signUp (_ email: String, _ password: String, completion: @escaping (Result<FireBaseUser, Error>) -> Void) {
         checkService.signUp(email: email, password: password) { result in
             switch result {
             case .success(let user):
