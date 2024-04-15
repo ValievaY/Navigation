@@ -16,8 +16,8 @@ class FeedViewController: UIViewController {
     private lazy var buttonFirst: UIButton = {
         let button = UIButton()
         button.setTitle(~"view-post", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.backgroundColor = .blue
+        button.setTitleColor(UIColor.createColor(lightMode: .black, darkMode: .white), for: .normal)
+        button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -26,8 +26,8 @@ class FeedViewController: UIViewController {
     private lazy var buttonSecond: UIButton = {
         let button = UIButton()
         button.setTitle(~"view-post", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.backgroundColor = .blue
+        button.setTitleColor(UIColor.createColor(lightMode: .black, darkMode: .white), for: .normal)
+        button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -35,7 +35,7 @@ class FeedViewController: UIViewController {
     
     private lazy var textField: UITextField = {
         let textField = UITextField()
-        textField.backgroundColor = .systemGray6
+        textField.backgroundColor = .createColor(lightMode: .systemGray6, darkMode: .systemGray2)
         textField.textAlignment = .center
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.black.cgColor
@@ -77,7 +77,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = ~"title-feed"
-        view.backgroundColor = .white
+        view.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
         addTargets()
         setupConstraints()
     }

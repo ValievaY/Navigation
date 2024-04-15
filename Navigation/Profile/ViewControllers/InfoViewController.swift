@@ -9,7 +9,7 @@ class InfoViewController: UIViewController {
         let button = UIButton()
         button.setTitle(~"button-title", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
-        button.backgroundColor = .yellow
+        button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -29,7 +29,7 @@ class InfoViewController: UIViewController {
         labelPlanet.textColor = .systemBlue
         labelPlanet.textAlignment = .center
         labelPlanet.numberOfLines = 3
-        labelPlanet.backgroundColor = .systemGray6
+        labelPlanet.backgroundColor = .createColor(lightMode: .systemGray6, darkMode: .systemGray2)
         labelPlanet.translatesAutoresizingMaskIntoConstraints = false
         return labelPlanet
     }()
@@ -39,7 +39,7 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
         constraints()
         setupAlert()
         addAlert()

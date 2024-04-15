@@ -25,7 +25,7 @@ class FavorietsPostsVC: UIViewController {
     }()
     
     override func viewDidLoad() {
-        view.backgroundColor = .white
+        view.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
         setup()
     }
     
