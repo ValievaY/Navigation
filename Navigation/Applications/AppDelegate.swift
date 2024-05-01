@@ -2,6 +2,7 @@
 
 import UIKit
 import FirebaseCore
+import NotificationCenter
 
 @main
 
@@ -9,6 +10,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        UNUserNotificationCenter.current().delegate = self
+        let notifications = LocalNotificationsService()
+        notifications.registeForLatestUpdatesIfPossible()
         return true
     }
 
@@ -25,7 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+}
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions {
+    
+        return [.banner, .badge, .sound]
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
 
+        if response.actionIdentifier == "action" {
+            let windowSceneDelegate = response.targetScene?.delegate as? UIWindowSceneDelegate
+            let window = windowSceneDelegate?.window
+            let rootViewController = window??.rootViewController
+            let notificationViewController = InfoViewController()
+            rootViewController?.present(notificationViewController, animated: true)
+        }
+    }
 }
 

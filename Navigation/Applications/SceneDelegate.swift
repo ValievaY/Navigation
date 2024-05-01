@@ -1,6 +1,7 @@
 
 import UIKit
 import FirebaseAuth
+//import NotificationCenter
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appConfiguration = AppConfiguration.allCases.randomElement()
         print (appConfiguration!)
         NetworkService.request(for: appConfiguration!)
+       // UNUserNotificationCenter.current().delegate = self
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -56,3 +58,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+//extension SceneDelegate: UNUserNotificationCenterDelegate {
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
+//
+//        if response.actionIdentifier == "action" {
+//            print("somth")
+//           // TabBarController.tabBar.present(InfoViewController(), animated: true)
+//        }
+//    }
+//}
