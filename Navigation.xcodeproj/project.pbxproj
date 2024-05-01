@@ -41,6 +41,7 @@
 		55708F512BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		557A222429C0798E0027FFCA /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222329C0798E0027FFCA /* BruteForce.swift */; };
 		557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222729C2D5F90027FFCA /* InfoPostModel.swift */; };
+		557FC5E92BC5D58700EABCE4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FC5E82BC5D58700EABCE4 /* Extension.swift */; };
 		55859B472BAA4C4B00040F10 /* FavorietsPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */; };
 		55859B4A2BAA4CA400040F10 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */; };
 		55859B4C2BAA4E3500040F10 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B4B2BAA4E3500040F10 /* CoreDataService.swift */; };
@@ -124,6 +125,7 @@
 		55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		557A222329C0798E0027FFCA /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		557A222729C2D5F90027FFCA /* InfoPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostModel.swift; sourceTree = "<group>"; };
+		557FC5E82BC5D58700EABCE4 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostsViewController.swift; sourceTree = "<group>"; };
 		55859B492BAA4CA400040F10 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		55859B4B2BAA4E3500040F10 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				55DDB2DB2B29C1450038BF46 /* PlanetNetwork.swift */,
 				55859B4B2BAA4E3500040F10 /* CoreDataService.swift */,
 				55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */,
+				557FC5E82BC5D58700EABCE4 /* Extension.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				55859B4E2BAA4E8900040F10 /* FavorietsPostsService.swift in Sources */,
 				557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */,
 				557A222429C0798E0027FFCA /* BruteForce.swift in Sources */,
+				557FC5E92BC5D58700EABCE4 /* Extension.swift in Sources */,
 				55FE6A9228B56A9A00991F30 /* FeedViewController.swift in Sources */,
 				55859B4C2BAA4E3500040F10 /* CoreDataService.swift in Sources */,
 				55EEA26D297859F40024E2AE /* FeedModel.swift in Sources */,

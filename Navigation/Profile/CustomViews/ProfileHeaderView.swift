@@ -26,7 +26,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView  {
     lazy var fullNameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        nameLabel.textColor = .black
+        nameLabel.textColor = .createColor(lightMode: .black, darkMode: .white)
         nameLabel.text = "Yulia Valieva"
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         return nameLabel
@@ -35,7 +35,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView  {
     lazy var statusLabel: UILabel = {
         let status = UILabel()
         status.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        status.textColor = .gray
+        status.textColor = .createColor(lightMode: .black, darkMode: .white)
         status.text = ~"status-text"
         status.translatesAutoresizingMaskIntoConstraints = false
         return status
@@ -59,7 +59,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView  {
         let titleButton = UIButton()
         titleButton.setTitle(~"title", for: .normal)
         titleButton.setTitleColor(UIColor.black, for: .normal)
-        titleButton.backgroundColor = .lightGray
+        titleButton.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
         titleButton.translatesAutoresizingMaskIntoConstraints = false
         return titleButton
     }()

@@ -39,8 +39,8 @@ class LogInViewController: UIViewController {
     private lazy var logIn: UITextField = {
         let logIn = UITextField()
         logIn.tag = 0
-        logIn.textColor = .black
-        logIn.backgroundColor = .systemGray6
+        logIn.textColor = .createColor(lightMode: .black, darkMode: .white)
+        logIn.backgroundColor = .createColor(lightMode: .systemGray6, darkMode: .systemGray2)
         logIn.textAlignment = .left
         logIn.placeholder = ~"logIn-placeholder"
         logIn.tintColor =  UIColor (named: "MyBlueColor")
@@ -55,8 +55,8 @@ class LogInViewController: UIViewController {
     private lazy var password: UITextField = {
         let password = UITextField()
         password.tag = 1
-        password.textColor = .black
-        password.backgroundColor = .systemGray6
+        password.textColor = .createColor(lightMode: .black, darkMode: .white)
+        password.backgroundColor = .createColor(lightMode: .systemGray6, darkMode: .systemGray2)
         password.textAlignment = .left
         password.placeholder = ~"password-placeholder"
         password.tintColor = UIColor (named: "MyBlueColor")
@@ -80,7 +80,11 @@ class LogInViewController: UIViewController {
         authLogin()
     })
     
-    private lazy var signInButton = CustomButton(title: ~"logInto-button", cornerRadius: 10, titleColor: .systemGray, color: .systemGray5, buttonAction: { [self] in
+    private lazy var signInButton = CustomButton(title: ~"logInto-button",
+                                                 cornerRadius: 10,
+                                                 titleColor: .createColor(lightMode: .systemGray, darkMode: .white),
+                                                 color: .createColor(lightMode: .systemGray5, darkMode: .systemGray2),
+                                                 buttonAction: { [self] in
         
         authSignUp()
     })
@@ -102,7 +106,7 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
-        view.backgroundColor = .white
+        view.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
         setupGestures()
         addSubview()
         setupConstraints()

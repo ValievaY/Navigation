@@ -45,7 +45,7 @@ class PhotosTableViewCell: UITableViewCell {
         let label = UILabel()
         label.tag = 0
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.textColor = .black
+           label.textColor = .createColor(lightMode: .black, darkMode: .white)
         label.text = ~"label-text"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -55,7 +55,7 @@ class PhotosTableViewCell: UITableViewCell {
         let image = UIImageView()
         image.tag = 1
         image.image = UIImage(systemName: "arrow.right")
-        image.tintColor = .black
+        image.tintColor = .createColor(lightMode: .black, darkMode: .white)
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()

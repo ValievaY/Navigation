@@ -79,7 +79,7 @@ class ProfileViewController: UIViewController {
         setupConstraints()
         setupXmarkGesture()
 #if DEBUG
-    view.backgroundColor = .lightGray
+        view.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
 #else
         view.backgroundColor = .systemBlue
 #endif
@@ -238,7 +238,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
             headerView.avatarImageView.image = user?.avatar
             headerView.fullNameLabel.text = user?.name
             headerView.statusLabel.text = user?.status
-            headerView.contentView.backgroundColor = .lightGray
+            headerView.contentView.backgroundColor = .createColor(lightMode: .white, darkMode: .black)
             return headerView
         }
         return nil

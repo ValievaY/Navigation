@@ -12,7 +12,7 @@ class CustomTableViewCell: UITableViewCell {
     
      lazy var authorText: UITextView = {
         let authorText = UITextView()
-        authorText.textColor = .black
+         authorText.textColor = .createColor(lightMode: .black, darkMode: .white)
         authorText.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         authorText.textContainer.maximumNumberOfLines = 2
         authorText.translatesAutoresizingMaskIntoConstraints = false
@@ -22,7 +22,7 @@ class CustomTableViewCell: UITableViewCell {
     
      lazy var descriptionText: UITextView = {
         let descriptionText = UITextView()
-        descriptionText.textColor = .systemGray
+        descriptionText.textColor = .createColor(lightMode: .black, darkMode: .white)
         descriptionText.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         descriptionText.translatesAutoresizingMaskIntoConstraints = false
         descriptionText.isScrollEnabled = false
@@ -48,7 +48,7 @@ class CustomTableViewCell: UITableViewCell {
     private lazy var likesLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        label.textColor = .black
+        label.textColor = .createColor(lightMode: .black, darkMode: .white)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -56,7 +56,7 @@ class CustomTableViewCell: UITableViewCell {
     private lazy var viewLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        label.textColor = .black
+        label.textColor = .createColor(lightMode: .black, darkMode: .white)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
