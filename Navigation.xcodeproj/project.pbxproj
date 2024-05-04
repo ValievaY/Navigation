@@ -42,6 +42,7 @@
 		557A222429C0798E0027FFCA /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222329C0798E0027FFCA /* BruteForce.swift */; };
 		557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222729C2D5F90027FFCA /* InfoPostModel.swift */; };
 		557FC5E92BC5D58700EABCE4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FC5E82BC5D58700EABCE4 /* Extension.swift */; };
+		557FC5FC2BD6ED0400EABCE4 /* LocalNotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FC5FB2BD6ED0400EABCE4 /* LocalNotificationsService.swift */; };
 		55859B472BAA4C4B00040F10 /* FavorietsPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */; };
 		55859B4A2BAA4CA400040F10 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55859B482BAA4CA400040F10 /* CoreDataModel.xcdatamodeld */; };
 		55859B4C2BAA4E3500040F10 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55859B4B2BAA4E3500040F10 /* CoreDataService.swift */; };
@@ -126,6 +127,7 @@
 		557A222329C0798E0027FFCA /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		557A222729C2D5F90027FFCA /* InfoPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostModel.swift; sourceTree = "<group>"; };
 		557FC5E82BC5D58700EABCE4 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		557FC5FB2BD6ED0400EABCE4 /* LocalNotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsService.swift; sourceTree = "<group>"; };
 		55859B462BAA4C4B00040F10 /* FavorietsPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostsViewController.swift; sourceTree = "<group>"; };
 		55859B492BAA4CA400040F10 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		55859B4B2BAA4E3500040F10 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				55859B4B2BAA4E3500040F10 /* CoreDataService.swift */,
 				55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */,
 				557FC5E82BC5D58700EABCE4 /* Extension.swift */,
+				557FC5FB2BD6ED0400EABCE4 /* LocalNotificationsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				551FDB8F296DC06D00581B08 /* LoginFactory.swift in Sources */,
 				554D61A128BB53BF0006D0BE /* ProfileHeaderView.swift in Sources */,
 				551FDB8D296C2E2B00581B08 /* LoginInspector.swift in Sources */,
+				557FC5FC2BD6ED0400EABCE4 /* LocalNotificationsService.swift in Sources */,
 				55DDB2E02B360F290038BF46 /* CheckerServiceProtocol.swift in Sources */,
 				55859B4E2BAA4E8900040F10 /* FavorietsPostsService.swift in Sources */,
 				557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */,
