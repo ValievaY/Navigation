@@ -89,6 +89,15 @@ class LogInViewController: UIViewController {
         authSignUp()
     })
     
+    private lazy var authButton = CustomButton(title: "Biometric authorization",
+                                               cornerRadius: 10,
+                                               titleColor: .createColor(lightMode: .systemGray, darkMode: .white),
+                                               color: .createColor(lightMode: .systemGray5, darkMode: .systemGray2),
+                                               buttonAction: { [self] in
+      
+        biometricAuth()
+  })
+    
     private var alert = UIAlertController(title: "", message: "",  preferredStyle: .alert)
     
     private var logInText: String?
@@ -100,6 +109,8 @@ class LogInViewController: UIViewController {
     private var userService: UserService?
     
     var loginDelegate: LoginViewControllerDelegate?
+    
+    let localAuth = LocalAuthorizationService()
     
     private var checkResult: Bool?
 
@@ -116,6 +127,7 @@ class LogInViewController: UIViewController {
 #else
         userService = CurrentUserService()
 #endif
+        biometricButtonImage()
     }
     
     private func setupGestures() {
@@ -144,10 +156,12 @@ class LogInViewController: UIViewController {
         scrollView.addSubview(button)
         scrollView.addSubview(signInButton)
         scrollView.addSubview(activityIndicator)
+        scrollView.addSubview(authButton)
     }
     
     func setupConstraints() {
         
+        authButton.translatesAutoresizingMaskIntoConstraints = false
         button.translatesAutoresizingMaskIntoConstraints = false
         signInButton.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
@@ -179,7 +193,12 @@ class LogInViewController: UIViewController {
             button.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 16),
             button.heightAnchor.constraint(equalToConstant: 50),
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-           button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+           button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            authButton.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 16),
+            authButton.heightAnchor.constraint(equalToConstant: 50),
+            authButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            authButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
         ])
     }
     
@@ -211,6 +230,32 @@ class LogInViewController: UIViewController {
             case .failure(let error):
                 self?.alert.message = "\(error.localizedDescription)"
                 self?.present(self!.alert, animated: true)
+            }
+        }
+    }
+    
+    private func biometricButtonImage() {
+        switch localAuth.biometricType {
+        case .faceID:
+            return authButton.setImage(UIImage(systemName: "faceid"), for: .normal)
+        case .touchID:
+            return authButton.setImage(UIImage(systemName: "touchid"), for: .normal)
+        case .none:
+            return
+        default:
+            return
+        }
+    }
+    
+    private func biometricAuth() {
+        
+        localAuth.authorizeIfPossible { [weak self] success, error in
+            
+            if success {
+                self?.navigationController?.pushViewController(self!.profileViewController, animated: true)
+            } else {
+                self?.alert.message = "\(error?.localizedDescription ?? "Face ID/Touch ID may not be configured")"
+                     self?.present(self!.alert, animated: true)
             }
         }
     }
