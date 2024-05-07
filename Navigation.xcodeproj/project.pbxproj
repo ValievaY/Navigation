@@ -37,6 +37,7 @@
 		5565FB122BBB3B1E003E00FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB0D2BBB28A3003E00FB /* Localizable.strings */; };
 		5565FB162BBC7DAC003E00FB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */; };
 		5565FB172BBC7DAC003E00FB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5565FB192BBC7DAC003E00FB /* Localizable.stringsdict */; };
+		55707CAD2BE26E6C0050125F /* LocalAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55707CAC2BE26E6C0050125F /* LocalAuthorizationService.swift */; };
 		55708F502BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		55708F512BA3BF8B00829E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */; };
 		557A222429C0798E0027FFCA /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A222329C0798E0027FFCA /* BruteForce.swift */; };
@@ -123,6 +124,7 @@
 		5565FB0F2BBB3904003E00FB /* LocalizationFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationFunc.swift; sourceTree = "<group>"; };
 		5565FB182BBC7DAC003E00FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		5565FB1A2BBC7DAE003E00FB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		55707CAC2BE26E6C0050125F /* LocalAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthorizationService.swift; sourceTree = "<group>"; };
 		55708F4F2BA3BF8B00829E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		557A222329C0798E0027FFCA /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		557A222729C2D5F90027FFCA /* InfoPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostModel.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				55859B4D2BAA4E8900040F10 /* FavorietsPostsService.swift */,
 				557FC5E82BC5D58700EABCE4 /* Extension.swift */,
 				557FC5FB2BD6ED0400EABCE4 /* LocalNotificationsService.swift */,
+				55707CAC2BE26E6C0050125F /* LocalAuthorizationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				55DDB2E02B360F290038BF46 /* CheckerServiceProtocol.swift in Sources */,
 				55859B4E2BAA4E8900040F10 /* FavorietsPostsService.swift in Sources */,
 				557A222829C2D5F90027FFCA /* InfoPostModel.swift in Sources */,
+				55707CAD2BE26E6C0050125F /* LocalAuthorizationService.swift in Sources */,
 				557A222429C0798E0027FFCA /* BruteForce.swift in Sources */,
 				557FC5E92BC5D58700EABCE4 /* Extension.swift in Sources */,
 				55FE6A9228B56A9A00991F30 /* FeedViewController.swift in Sources */,
@@ -815,6 +819,7 @@
 				DEVELOPMENT_TEAM = 3HQQ7A5J5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "FaceID to authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -845,6 +850,7 @@
 				DEVELOPMENT_TEAM = 3HQQ7A5J5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "FaceID to authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
